@@ -8,9 +8,9 @@ $user_name = get_user_by('id', $rest_request['$user_id']);
             autonation token: " 
             . $rest_request['autonation_token'] . 
             " \n <br /> 
-             to reset your password follow this link https://thebeautydemy.com/reset_confirm?auth_id=" 
+             to reset your password follow this link https://dumy.com/reset_confirm?auth_id=" 
              .             $rest_request['token_id']             . "         .     '&umail=' .             $rest_request['user_mail'] .
-            " \n <br />  at thebeautydemy.com we Will always support you💖 ";
+            " \n <br />  at dumy.com we Will always support you💖 ";
             
 */
 
@@ -42,7 +42,7 @@ $message = '
             '">Reset Password Link</a>, </p>
             
             <br /><br />
-            <p>at <a href="thebeautydemy.com">ThebeautyDemy</a> we Will always support you 💖 </p>
+            <p>at <a href="dumy.com">dumy</a> we Will always support you 💖 </p>
             </div>
         </body>
         </html>
@@ -50,12 +50,12 @@ $message = '
 ';
             $headers  = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r";
-           // mail($rest_request['user_mail'],"thebeautydemy Reset Password request",$message,$headers);
+           // mail($rest_request['user_mail'],"dumy Reset Password request",$message,$headers);
 
        $mailResult = false;
       
        
-       $mailResult = wp_mail( $rest_request['user_mail'],"thebeautydemy Reset Password request",$message,$headers ); 
+       $mailResult = wp_mail( $rest_request['user_mail'],"dumy Reset Password request",$message,$headers ); 
         
 
        echo $mailResult;
